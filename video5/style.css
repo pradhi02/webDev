@@ -1,0 +1,15 @@
+body{
+    background-color: rebeccapurple;
+}
+td{
+    border: 2px solid black;
+} 
+tbody{
+    background-color: rgb(166, 74, 17);
+} 
+thead{
+    background-color: rgb(221, 212, 187);
+} 
+tfoot{
+    background-color:rgb(136, 158, 136);
+}
