@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(163, 196, 158);
+    background-image:url("img1.avif");
+    opacity: 0.5;
+
+} 
+image{
+    size:20px 30px ;
+    
+} 
+td{
+    border: 2px solid black;
+}
