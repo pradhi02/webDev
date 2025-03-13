@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms-lets learn it</title>
 </head>
+
 <body>
     <h1>Form for hiring teaching assistance-TA</h1>
-    <form action="post"> 
- 
-    </form>
-    
+    <form action="post">
+        <label for="username">ENTER YOUR USERNAME HERE </label>
+        <input id="username" type="text" name="username" placeholder="enter your username">
+
+
+        <div>
+            <label for="male">MALE</label>
+            <input type="radio" if="male" name="Gender" value="Male">
+            <label for="female">FEMALE</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox" name="subscribe">
+            <label for="checkbox">subscribe to our newsletter</label>
+        </div> 
+         
+
+        <div>
+            <label for="comments">Enter your comments here</label>
+            <textarea name="comments" rows="4" cols="50" id="comments"></textarea>
+        </div> 
+
+        <div>
+            <label for="fruits">Select your favourite </label>
+            <select name="fruits" id="fruits"> 
+                <option value="Select">Select</option>
+                <option value="Apples">APPLES</option>
+                <option value="bananas">BANANAS</option>
+                <option value="Kiwi">KIWIS</option>
+                <option value="Pineappke">PINEAPPLES</option>
+            </select> 
+        </div>
+
+    </form> 
+
 </body>
-</html> 
+
+</html>
