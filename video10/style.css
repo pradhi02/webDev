@@ -1,0 +1,15 @@
+/*now we access the html ID with, # and we access the classes with .dot */ 
+
+#Fruits{
+color: rgb(226, 240, 180);
+} 
+
+.red{
+    background-color: rgb(245, 18, 18);
+}
+.yellow{
+    background-color: rgb(219, 91, 22);
+} 
+.green{
+    background-color: green;
+}
