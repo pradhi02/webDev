@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTIES</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 20vw;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+
+            border: 2px solid black;
+            display: inline;
+            /*this will let us use block elements as inline onesn in css pages*/
+
+            display: inline-block;
+            /* when we set this, we can actually, set the marging, width and paddings acording to our needs */ 
+
+           /* display:none; /*completely box and space hata dega ye*/ 
+
+           /* visibility: hidden; completey hidden text but space is intacted */ 
+
+            display:grid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        helllo im a box bro!
+    </div>
+    <div class="box">also a im a nice box</div>
+
+    <span>
+        hello im a
+    </span>
+
+    <span>good boy </span>
+</body>
+
+</html>
