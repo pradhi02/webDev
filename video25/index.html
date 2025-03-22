@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shadows and outlines</title> 
-    <style> 
-        .box{
+    <title>CSS-list styling</title>
+    <style>
+        nav ul li{
+          /*  list-style-type: style disc; /*this will remove the list marker from the list element styling*/ 
+            /*bye default the marker is outside the list style , if we wantt to keep it inside, we use*/ 
+           list-style-type:"🥰";
+            list-style-position:inside; 
+            background-color: chartreuse; 
             border:2px solid black;
-            padding:2px; 
-            color:black;
-            box-shadow: 5px 5px 17px 5px #d26a6a; 
+           /* list-style-image: url("https://picsum.photos/200"); */ 
 
-            text-shadow: 5px 5px 5px rgb(18, 6, 93);  }  
-p{
-    text-shadow:5px 5px 10px rgb(173, 188, 11)
-;  
-outline:5px solid green; 
-border:2px dotted yellow;
-}
 
+               
+
+        }
     </style>
 </head>
 <body> 
-    <div class="box">
-        Hello im a box and i will explain you about the shadows of the box.
-    </div> <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veniam doloribus adipisci excepturi sapiente quidem quas alias sequi harum sed cupiditate atque. Facere, doloribus assumenda? </P>
-    
-               
-
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Home</li>
+        </ul>
+    </nav>  
 </body>
 </html>
