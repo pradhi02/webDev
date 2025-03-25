@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+ body {
+            background-color: aqua;
+        }
+
+        @media only screen and (orientation:landscape) {
+            /*when orientation is landscape change to purple color*/ 
+            body{background-color:purple;}
+            
+        }
+       
+
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box1 .box2 .box3 {
+            border: 2px solid black;
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            height: 344px;
+            width: 344px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>hello im a box and im here to explain you about media queries heheheheh</p>
+    </div>
+    <div class="boxes">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+    </div>
+</body>
+
+</html>
