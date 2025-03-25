@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-variable</title>
+    <style> 
+   :root{
+        --color:rgb(119, 173, 119);
+        --secolor:rgba(181, 195, 187, 0.83);
+        --defpad:5px; 
+        --bord:5px; } 
+
+   *{
+            margin: 0;
+            padding: 0;
+        } 
+        .nav{ 
+    
+            background-color:var(--color); 
+        } 
+        ul{
+            display:flex;
+        }  
+        ul li{
+            list-style-type:none;
+            padding:var(--defpad); 
+            border: var(--bord) solid var(--secolor);
+        }
+
+        .container{ 
+            --color:rgb(211, 144, 144);
+            background-color:var(--secolor);
+        }
+
+        .para2{
+            background-color: var(--color); /*since the para2 is part of conatiner classs the local  value will be accessed and not the global value*/ 
+        }   
+
+        .para3{
+          background-color: var(--color); /*over here the gloabel value of the color will be accessed*/ 
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>HOME</li>
+            <li>CONTACT</li>
+            <li>ABOUT US</li>
+        </ul>
+    </div> 
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt recusandae, pariatur inventore velit ex ipsam debitis harum iure aliquam dolor culpa quis aspernatur earum nihil quod excepturi facere! Hic est placeat, praesentium cumque autem ex, deleniti voluptatum iure corrupti sapiente molestias eligendi magni laudantium vitae!</p> 
+
+        <p class="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint at doloribus error, tempore nulla quibusdam vero voluptatum esse earum, reiciendis, quam eos!</p>
+    </div> 
+
+
+    <div class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aliquid minus rem?</div>
+</body>
+</html>
