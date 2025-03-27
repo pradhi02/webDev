@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLOAT AND CLEAR</title>
+    <style>
+        .cards{
+            border:2px solid black;
+            padding:2px;
+            
+        }
+
+        .card{
+            margin:5px;
+            padding:5px;
+            border:2px solid blue;
+            display:flow-root;
+        }  
+
+
+        .card>p{   
+          /*p immediate child in the div class*/ 
+            background-color: blue;
+        }
+        .card:nth-child(3){
+            clear:both;
+            background-color: aqua;
+        } 
+
+        
+        img{
+            height:220px; 
+            width:210px; 
+            float:none; 
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="cards"> 
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima magnam praesentium asperiores nemo, ducimus, sint delectus fugiat consequuntur saepe officiis error itaque.  
+            <img src="https://images.unsplash.com/photo-1742576948659-3c630862a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="picture of dog">     
+        </p></div>
+        <div class="card">HELLOOO IM BOX 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur nisi vel dolorum praesentium. Tempora, asperiores natus! Unde sunt ullam mollitia, ducimus labore corporis perferendis odit, minima incidunt sit magni expedita optio delectus.</div>
+        <div class="card">HELLLO IM BOX 3, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quisquam tempore ipsam eaque perspiciatis repellat! In eos praesentium cumque dolore repellat unde optio ad facilis cum quisquam nobis fugit, aliquam iusto, incidunt doloremque, perferendis saepe dolores? Magnam maiores, eos reprehenderit vel dolor tenetur saepe accusamus harum ullam, incidunt aspernatur nobis debitis, adipisci similique unde iure fuga beatae labore mollitia impedit ex nisi cum. Optio perspiciatis debitis, velit, maxime commodi qui autem iste aliquid non officiis numquam dolorem aperiam quam earum ratione esse saepe voluptates perferendis fuga facere dolorum porro sequi. Molestias unde asperiores at exercitationem numquam ut cupiditate illum corrupti consectetur, sequi alias fugit accusamus perspiciatis. Consectetur quae ut libero officia reprehenderit rerum, inventore asperiores voluptatum beatae. Sit ducimus aperiam, consequatur perspiciatis odit earum, nobis accusamus officiis sunt, consectetur dicta cupiditate maxime? Repellendus aspernatur quis inventore praesentium libero explicabo deleniti molestiae accusamus ea, optio similique quod ipsam cumque quas voluptas numquam in rem minima illum qui aliquam architecto perspiciatis quasi! Voluptatem ipsum enim saepe. Sequi, ipsa porro. Ab, libero! Corporis officiis nostrum iure a eligendi mollitia culpa id explicabo pariatur quos, praesentium iusto facere dignissimos odio repellat. Minima autem velit distinctio quisquam provident assumenda eaque quae repudiandae eveniet atque, culpa error optio saepe nesciunt quaerat sint id, praesentium vel cumque magni! Delectus velit temporibus ullam voluptatum magnam? Aliquid quia suscipit nobis reiciendis provident iure expedita blanditiis eos totam fugiat vitae, id minima tempora ratione consequatur. Ea ducimus ab porro nemo eaque eius ipsa fugiat, obcaecati quisquam libero cum, exercitationem iste, architecto ullam nostrum a labore veritatis eum praesentium neque dolore quas. Odio id, totam asperiores aliquam atque natus ab nemo cupiditate veniam quis molestias cumque nam, odit nulla alias debitis? Distinctio dolorem quod placeat? Odio accusantium asperiores nobis. Doloribus quasi aperiam culpa delectus debitis ad accusamus cumque fugiat modi ut unde similique suscipit error vitae dolorum sunt commodi enim minus, veritatis corporis nemo iusto, dolorem dignissimos? Incidunt aperiam voluptas est omnis temporibus, similique magni doloribus unde minus ullam, voluptates iste, aliquam recusandae placeat!</div>
+    </div>
+    
+</body>
+</html>
