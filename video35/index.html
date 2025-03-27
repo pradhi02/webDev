@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+       /* * {
+            border: 2px solid rgb(50, 10, 193);
+            background-color: chartreuse;
+            /* universal selector */
+    
+
+      /*  .outbox .box {
+            /*class selectors
+            margin: 2px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+
+        .box1,
+    /*    p {
+            /*class and element selector also called as a group selector
+            background-color: cadetblue;
+        } */ 
+
+       /* .outbox>p {
+            /*child selector
+            background-color: rgb(33, 134, 45);
+        } */
+
+       /* .box1 p {
+            background-color: brown;
+        } */ 
+
+        /*first-child selector
+   p:first-child{
+    background-color: rgb(199, 192, 149);
+   }
+       */  
+          .outbox{
+            border:2px solid blue;  
+          }
+          
+       .box{ 
+        margin:13px;
+        padding:5px;
+        border:2px solid red;
+       }  
+
+      /* .box1:first-child{
+        background-color: chartreuse;
+       } */ 
+
+     /*  .box :nth-child(2){
+        background-color: aqua;
+       } */ 
+
+      /* .box :first-line{
+        color:rgb(205, 15, 53);
+       } */ 
+
+     /*  .outbox  * { 
+       color:blue;
+       }
+            [data-color="primary"]{
+                background-color: coral;
+                margin-top: 80px ;
+                padding:6px;
+            }  */  
+
+          /*  .box:nth-child(even){
+                background-color: dodgerblue;
+            }*/ 
+            .box:nth-last-child(2){
+            background-color: hotpink;
+            } 
+            .outbox:before{
+                content:"HELLO IM A CONTENT THIS WILL APPEAR BEFORE YOUR DIV AS YOU HAVE DUNAMICALLY INSERTED ME";
+            } 
+
+            .outbox::after{
+                content:"HELLLO YOU HAVE INSERTED ME AFTER THE DIVISION AND ADDED ME DYNAMICALLY";
+            } 
+             ::selection{
+                color:aqua;
+                background-color: black;
+             } 
+             .outbox:first-letter{
+                color: blueviolet;
+                font-size: 45px;;
+             }
+            .box::first-letter{
+                color:gold;
+                font-size: 45px;}
+            
+        input::placeholder{
+            color:crimson;
+            background-color: yellow;
+        }
+                
+    </style>
+</head>
+
+<body>
+    <div class="outbox">
+      
+        <div data-color="primary" class="box box1">
+            <p>Horem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias ipsa dolore non labore! Minus
+                dolorum reprehenderit inventore ullam! Veniam placeat nostrum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum saepe illo officiis explicabo laboriosam corporis vitae est ut quod magnam aperiam vel at consectetur voluptates libero aut, exercitationem tempore? Mollitia nihil ab cum!<br>
+
+                <p>Eorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat exercitationem in, asperiores at, fuga
+                assumenda amet ratione dolores nemo quam repellendus, rem dolor voluptatum! Iusto eos alias incidunt
+                explicabo impedit est quidem magni suscipit animi.</p>
+        </div>
+
+        <div class="box box2">
+            <P>
+                Eorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque veritatis id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur delectus excepturi porro repellat distinctio mollitia accusantium dolorem fugiat recusandae laboriosam sint aspernatur, totam rerum, quae iure explicabo deserunt quo necessitatibus? Vitae, voluptatum mollitia. </P>
+        </div>
+
+        <div class="box box3">Yorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quasi corrupti maxime
+            optio dolorem odio eos dolorum distinctio, neque voluptate animi qui sit, fugiat nesciunt itaque repudiandae
+            numquam reiciendis rerum veritatis deserunt. Quis, enim  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptates fugit illo alias perferendis at, molestiae facilis non ipsam architecto dolore nostrum sapiente nemo ut ea, tenetur reprehenderit fugiat, officiis excepturi rerum exercitationem. Tempora, accusamus neque perspiciatis animi illum quae laudantium iusto. Dolores iure quaerat accusamus, nostrum expedita et maxime amet sint ea consequatur repellendus fugit.</div> 
+
+            <div class="box box4">
+                Oorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt sunt ab doloremque quod officia repellat incidunt quo fugiat sequi molestiae quisquam optio sed eaque saepe, non ipsum dicta, totam at nostrum quaerat sit, earum amet ullam. Aut quasi labore asperiores autem, quo vero temporibus corporis cumque debitis, illo officiis dolor iusto explicabo eveniet. Minus, mollitia eum, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis assumenda incidunt laboriosam quae veniam quaerat exercitationem adipisci rem. Corrupti molestias facere facilis sequi, doloribus non velit, voluptate, iure autem esse numquam incidunt eaque consectetur obcaecati inventore quos in blanditiis asperiores? Soluta quae itaque, repellendus atque autem cupiditate deserunt enim similique maiores blanditiis sequi ullam in officia nemo. Modi soluta quaerat nemo quam, nostrum perspiciatis repellat animi, distinctio quos assumenda voluptatum porro esse dicta sequi odio voluptas ullam.
+
+            </div> 
+
+            <input id="ONE" type="txt" placeholder="Hello enter your name" name="gets the name">
+    </div>
+</body>
+
+</html>
