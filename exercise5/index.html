@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title> 
+    <style> 
+    *{
+        margin: 0;padding: 0;
+    } 
+    header{
+        position: sticky; 
+        top:0;
+        
+    } 
+    main{
+        background-color: black;
+        color: white;
+    }
+
+    
+    nav{ 
+
+        background-color: pink;
+        height:80px;
+        padding-top: 15px;
+        
+    }
+        nav ul li{
+        
+         list-style-type:none;
+            display:inline;
+            padding:20px;
+         } 
+
+         .outbox{ 
+            text-align: center;
+            padding:55px 23px;
+            border:2px solid black;
+            background-color:rgb(19, 216, 150);
+             margin: 12px 34px;
+             
+            
+         } 
+         .box1{ 
+           display: inline-block; 
+            background-color: blue;
+            height:70vh;
+            width:40vw; 
+            margin:0 12px;
+           
+            
+         }
+
+         .box2{
+            display: inline-block;
+            background-color: brown;
+            height:70vh;
+            width:40vw;
+            padding:0 12px;
+
+         }  
+
+         
+        .textbox { 
+          
+            padding: 34px;
+            border: 2px solid white;
+            margin: 50px 34vw;
+            font-size: 2em;
+            border-radius: 13px;
+
+        } 
+        footer{
+            background-color: orange;
+        }  
+
+        .logo img{ 
+            position:fixed;
+            bottom:12px;
+            right:23px;
+            height:32px;
+            border:2px solid black;
+            border-radius:89px;
+            size: 70px;
+
+        }
+
+
+    
+
+         
+
+    </style>
+</head> 
+<body> 
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Work</li>
+                <li>Services</li>
+                <li>Join Us</li>
+                <li>Careers</li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <div class="outbox">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    
+
+    <footer>
+        <div class="textbox"> <P>WELCOME TO SIGMA WEB DEVELOPMENT COURSE</P></div>
+    
+
+    <div class="logo">
+        <img src="https://images.unsplash.com/photo-1742925602178-0f5939ee6845?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" alt="logo "> 
+    </footer> 
+</main> 
+    
+</body>
+</html>
