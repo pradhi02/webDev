@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+            border:2px solid black;
+            height:80vh;
+            width: 100vw;
+            margin:122px;
+            
+            
+        } 
+
+        .box{
+            border:2px solid red;
+            height:70px;
+            width: 70px; 
+
+            transform:translateZ(50px); /*we can use these properties indivisdually as well as with the translate(), with sepcific axis and comibined to*/  
+
+            transform:scale(1.5);/* both negative and positive values could be applied to this as we move , 1.5 will scale the element both axis and -1.5 with mirror the element and scaling will be niche, since y axis me negative side me jayega as per number line*/ 
+
+            transform:rotate(0.25turn);/*roate the box in how much we have written*/ 
+
+            transform:skew(10deg,10deg); /*distrot the x and y axis of the box borunderoes, if we make x-axis 90deg skew then it will become horizontally sort of invisible and if me make y the same it will become vertically invisible*/ 
+
+            transform-origin:-0% -0%;
+            transform:rotate(0.25turn);
+
+
+
+
+        } 
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+    </div>
+    
+</body>
+</html>
