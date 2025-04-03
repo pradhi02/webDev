@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head> 
+<style>
+.container{
+    height:80vh;
+    width:50vw;
+    border:2px solid black;
+    background-color: rgb(26, 224, 154);
+
+}  
+.box{ 
+    height:5%; width:40%;
+      background-color: brown;
+      
+      transition-property:transform, background-color;
+       /* 1 specifies the css where the transition is applied */ 
+      transition-duration:5s; /* 2 how long the transition will take place*/ 
+
+      transition-timing-function:ease-in-out; /* 3 spicifes the timing curve of the transition effect*/ 
+
+      transition-delay:0.1s; /* 4 after how long the transition will take place*/ 
+
+
+
+ 
+} 
+.translate{
+    transform:translate(10vw,50vh) scale(2) skew(2deg);
+    background-color: rgb(224, 151, 196);
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="box translate">BOX</div>
+    </div>
+    
+</body>
+</html>
