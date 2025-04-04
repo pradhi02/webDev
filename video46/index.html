@@ -17,33 +17,109 @@
             justify-content: center;
             align-items: center;
             height: 32px;
-            width: 45px; 
-            animation: panimation 25s ease-in  infinite alternate ;
-            
-        } 
+            width: 45px;
+            animation: panimation 25s ease-in infinite alternate;
+
+        }
 
         @keyframes panimation {
-            from{ 
-                 background-color: burlywood;
-            } 
+            from {
+                background-color: burlywood;
+            }
 
-            to { 
+            to {
 
-                background-color:rgb(249, 233, 13);
-                transform:translate(1000px,0px) skew(20deg) rotate(180deg);
+                background-color: rgb(249, 233, 13);
+                transform: translate(1000px, 0px) skew(20deg) rotate(180deg);
+            }
 
+
+            0% {
+                /*this defines at what percentage of animation, what style should be applied*/
+                background-color: blue;
+                transition: rotate(360deg);
+            }
+
+            20% {
+                background-color: blue;
+
+            }
+
+            40% {
+                background-color: rgb(55, 55, 241);
+            }
+
+            60% {
+                background-color: rgb(113, 113, 255);
+            }
+
+            80% {
+                background-color: rgb(164, 164, 246);
+            }
+
+            100% {
+                background-color: rgb(209, 209, 252);
             }
         }
 
+        header {
+            background-color: rgb(231, 238, 92);
+        }
 
+
+        .letter-changer::after {
+            content: "A";
+            /* Initial content */
+            animation: changeLetter 3s linear infinite alternate;
+        }
+
+        @keyframes changeLetter {
+            0% {
+                content: "A";
+            }
+
+            50% {
+                color: white;
+            }
+
+            100% {
+                content: "B";
+            }
+        } 
+
+        .m{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size:18px;
+         text-decoration:underline;
+         animation: anim2 5s ease-in-out infinite alternate;
+        } 
+
+        @keyframes anim2 {
+            from{
+                      
+            } 
+            to{
+                transform:translate(1000px,0px);
+            }
+            
+            
+        }
     </style>
 </head>
 
 <body>
+
+    <nav>
+        <header>
+            <div class="m">hello,welcome-feel free to yap
+            </div>
+        </header>
+    </nav>
     <div class="container">
         <div class="box"> BOX
         </div>
     </div>
+    <div class="letter-changer"></div>
 </body>
 
 </html>
