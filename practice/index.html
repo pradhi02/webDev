@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #fbc2eb, #3a6075);
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            padding-top: 100px;
+            height: 80vh;
+            width: 80vw;
+            border: 2px solid rgb(96, 113, 116);
+            gap: 23px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .button1{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba(188, 142, 184, 0.95);
+            height: 100px;
+            width: 100px;
+            border-radius: 200px;
+            background: linear-gradient(to right, #f7ecea, #190e19);
+            animation: pop 2s ease-out 1s; 
+            box-shadow: 0px 4px 10px rgba(2, 147, 219, 0.5);
+        } 
+
+        
+        .button2{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba(188, 142, 184, 0.95);
+            height: 100px;
+            width: 100px;
+            border-radius: 200px;
+            background: linear-gradient(to right, #f7ecea, #190e19);
+            animation: pop 2s ease-out 4s ; 
+            box-shadow: 0px 4px 10px rgba(2, 147, 219, 0.5);
+        }
+
+        
+        .button3{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgba(188, 142, 184, 0.95);
+            height: 100px;
+            width: 100px;
+            border-radius:200px; 
+            background: linear-gradient(to right, #f7ecea, #190e19);
+            animation: pop 2s ease-out 6s  ; 
+            box-shadow: 0px 4px 10px rgba(2, 147, 219, 0.5);
+        }
+
+@keyframes pop { 
+    to{ 
+     transform:translateY(0,0) ;
+    } 
+    from{  
+        transform:translateY(-200px);
+
+    }
+    
+}
+
+
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button1">
+        </div>
+        <div class="button2">
+            
+        </div>
+        <div class="button3">
+            
+        </div>
+    </div>
+
+</body>
+
+</html> 
