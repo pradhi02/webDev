@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filters</title>  
+    <style> 
+
+
+      img{
+        height:60vh;
+        width:50vw; 
+      }  
+      
+      .one{
+        filter:brightness(122%);
+      }
+       .two{
+        filter:grayscale(80%) contrast(230%) ; 
+        filter:opacity(0.2);
+       } 
+
+       .three{
+        filter:hue-rotate(80deg) drop-shadow(16px 16px 10px aqua) invert(1); 
+       }
+
+
+
+
+    </style>
+   
+</head>
+<body> 
+    <div class="container">
+        <img class="one" src="https://plus.unsplash.com/premium_photo-1664543650302-68481f46e6cf?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="blue">
+
+        <img class="two" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fbAUMHRVzNbRHudEUhH4Es6nFHc11qc0Yg&s" alt="mr bean">
+
+        <img src="https://ew.com/thmb/WPg1RSe_3jni-SOkCUgwab7qMNo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/50-shades-of-grey-2000-5d2d281af813477cb5b9ccd3c5db3d9d.jpg" alt="mr bean" class="three">
+    </div>
+    
+</body>
+</html>
