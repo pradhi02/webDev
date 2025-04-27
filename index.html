@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSBox-Model</title>
-    <style> 
-    *{ 
-        margin: 0px;
-        padding: 0px;   
-    } 
+    <title>Random-RGB</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .box{
-        font-style: italic;
-        background-color: aqua;
-    }
-     .box1{
-        color: black; 
-        padding:10px; 
-        margin:5px; 
-        box-sizing: border-box ;
-     } 
+        .box {
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
 
-     .box2{
-        color: rgb(220, 90, 10);
-        padding:20px;
-     }
+        }
     </style>
 </head>
-<body> 
-    <div class="box box1"> Hey im a box and my number is 1.</div> 
-    <div class="box box2"> 
-        hey im box model and my box number is 2
-     </div>
-    
+
+<body>
+    <div class="container">
+        <div class="box box1">BOX ONE</div>
+        <div class="box box2">BOX TWO</div>
+        <div class="box box3">BOX THREE</div>
+        <div class="box box4">BOX FOUR</div>
+        <div class="box box5">BOX FIVE</div>
+        <div class="box box6">BOX SIX</div>
+    </div> 
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
