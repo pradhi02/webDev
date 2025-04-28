@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docu</title>
+    <style> 
+
+ .container{
+    background-color:green;
+ }
+        .box {
+            border: 2px solid black;
+            height: 50vh;
+            width: 50vw;
+            background-color: rgb(174, 218, 174);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="color:red ;" data-color="pruple">
+            hi im a box and we will learn about insertions!
+        </div>
+    </div>
+
+    <script>
+        let div = document.createElement("div")
+        div.innerHTML = "hey wassupp,i will be demonstrating about insertion, and i have been inserted by <b>The owner of this page"
+        div.setAttribute("class", "created");
+        document.querySelector(".container").append(div)
+
+
+        let newDiv = document.createElement("div")
+        newDiv.innerHTML = "hey im a box and inserted one"
+        div.setAttribute("class", "created")
+        document.querySelector(".container").before(newDiv) //insertion before the container we have targeted in query selector
+        let cont = document.querySelector(".container") 
+        cont.insertAdjacentHTML("afterend","<b> hello im here to explain about insertion adjacent html as yeahhhh </b>- AFTEREND") 
+        cont.insertAdjacentHTML("beforeend","<b> hello im here to explain about insertion adjacent html as yeahhhh - BEFOREEND </b>")
+        cont.insertAdjacentHTML("afterbegin","<b> hello im here to explain about insertion adjacent html as yeahhhh - AFTERBEGIN</b>")
+        cont.insertAdjacentHTML("beforebegin","<b> hello im here to explain about insertion adjacent html as yeahhhh BEFOREBEIGN </b>") 
+  
+        document.querySelector(".box").remove() //removes the selected class , here it is first elment with the class box", also queryselector selects the first node with the selected class 
+
+        document.querySelector(".container").classList
+
+    </script> 
+
+</body>
+
+</html>
